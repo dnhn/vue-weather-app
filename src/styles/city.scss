@@ -24,7 +24,7 @@ $cityClass: '.city';
     @media screen and (orientation: landscape) {
       z-index: 1;
       flex: calc(2 / 6);
-      box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+      box-shadow: 0 0 20px var(--color-box-shadow);
     }
 
     #{$cityClass}-view-btn {
@@ -33,8 +33,8 @@ $cityClass: '.city';
   }
 
   &--night {
-    background-image: linear-gradient(180deg, #222, transparent);
-    color: white !important;
+    background-image: linear-gradient(180deg, var(--color-222), transparent);
+    color: var(--color-white) !important;
   }
 
   &-temp {
@@ -160,11 +160,11 @@ $cityClass: '.city';
 
       #{$cityClass}--night & {
         .st0 {
-          fill: #333;
+          fill: var(--color-333);
         }
 
         .st4 {
-          fill: white;
+          fill: var(--color-white);
         }
       }
 

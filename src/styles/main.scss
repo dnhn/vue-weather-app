@@ -1,5 +1,13 @@
 @import 'weather-svg.scss';
 
+:root {
+  --color-black: black;
+  --color-white: white;
+  --color-222: #222;
+  --color-333: #333;
+  --color-box-shadow: rgba(0, 0, 0, .5);
+}
+
 html, body {
   height: 100%;
 }
@@ -9,6 +17,7 @@ body {
   padding: 0;
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 200;
+  color: var(--color-333)
 }
 
 .weather {
@@ -22,5 +31,5 @@ body {
   border-radius: 2em;
   font-weight: 600;
   text-transform: uppercase;
-  box-shadow: 0 1px 1px black;
+  box-shadow: 0 1px 1px var(--color-black);
 }
