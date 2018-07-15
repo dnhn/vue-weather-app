@@ -7,35 +7,47 @@ const cities = [
     'sys': {
       'type': 1,
       'id': 4832,
-      'message': 0.0061,
+      'message': 0.0138,
       'country': 'IS',
-      'sunrise': 1531626140,
-      'sunset': 1531696955
+      'sunrise': 1531626200,
+      'sunset': 1531696898
     },
     'weather': [
       {
-        'id': 803,
-        'main': 'Clouds',
-        'description': 'broken clouds',
-        'icon': '04d'
+        'id': 300,
+        'main': 'Drizzle',
+        'description': 'light intensity drizzle',
+        'icon': '09d'
+      },
+      {
+        'id': 701,
+        'main': 'Mist',
+        'description': 'mist',
+        'icon': '50d'
+      },
+      {
+        'id': 521,
+        'main': 'Rain',
+        'description': 'shower rain',
+        'icon': '09d'
       }
     ],
     'main': {
-      'temp': 12.52,
-      'pressure': 995,
-      'humidity': 81,
-      'temp_min': 12,
-      'temp_max': 13
+      'temp': 10.52,
+      'pressure': 1000,
+      'humidity': 100,
+      'temp_min': 10,
+      'temp_max': 11
     },
-    'visibility': 10000,
+    'visibility': 7000,
     'wind': {
-      'speed': 6.7,
-      'deg': 130
+      'speed': 3.6,
+      'deg': 40
     },
     'clouds': {
-      'all': 75
+      'all': 90
     },
-    'dt': 1531660026,
+    'dt': 1531688875,
     'id': 3413829,
     'name': 'Reykjavik'
   },
@@ -46,35 +58,36 @@ const cities = [
     },
     'sys': {
       'type': 1,
-      'id': 5091,
-      'message': 0.0075,
+      'id': 5168,
+      'message': 0.0065,
       'country': 'GB',
-      'sunrise': 1531627285,
-      'sunset': 1531685456
+      'sunrise': 1531627309,
+      'sunset': 1531685436
     },
     'weather': [
       {
         'id': 800,
         'main': 'Clear',
         'description': 'clear sky',
-        'icon': '01d'
+        'icon': '01n'
       }
     ],
     'main': {
-      'temp': 27.59,
-      'pressure': 1015,
-      'humidity': 30,
-      'temp_min': 26,
-      'temp_max': 29
+      'temp': 22.77,
+      'pressure': 1014,
+      'humidity': 43,
+      'temp_min': 22,
+      'temp_max': 24
     },
     'visibility': 10000,
     'wind': {
-      'speed': 1.5
+      'speed': 2.6,
+      'deg': 310
     },
     'clouds': {
       'all': 0
     },
-    'dt': 1531660026,
+    'dt': 1531688875,
     'id': 2643743,
     'name': 'London'
   },
@@ -86,35 +99,34 @@ const cities = [
     'sys': {
       'type': 1,
       'id': 5245,
-      'message': 0.0086,
+      'message': 0.0061,
       'country': 'DK',
-      'sunrise': 1531622836,
-      'sunset': 1531683796
+      'sunrise': 1531622865,
+      'sunset': 1531683770
     },
     'weather': [
       {
-        'id': 801,
-        'main': 'Clouds',
-        'description': 'few clouds',
-        'icon': '02d'
+        'id': 800,
+        'main': 'Clear',
+        'description': 'clear sky',
+        'icon': '01n'
       }
     ],
     'main': {
-      'temp': 21.61,
-      'pressure': 1017,
-      'humidity': 68,
-      'temp_min': 20,
-      'temp_max': 23
+      'temp': 16.57,
+      'pressure': 1016,
+      'humidity': 77,
+      'temp_min': 15,
+      'temp_max': 19
     },
     'visibility': 10000,
     'wind': {
-      'speed': 5.1,
-      'deg': 20
+      'speed': 2.6
     },
     'clouds': {
-      'all': 20
+      'all': 0
     },
-    'dt': 1531660026,
+    'dt': 1531688875,
     'id': 2618425,
     'name': 'Copenhagen'
   },
@@ -126,35 +138,35 @@ const cities = [
     'sys': {
       'type': 1,
       'id': 6044,
-      'message': 0.0062,
+      'message': 0.0101,
       'country': 'TR',
-      'sunrise': 1531622711,
-      'sunset': 1531676090
+      'sunrise': 1531622727,
+      'sunset': 1531676077
     },
     'weather': [
       {
-        'id': 801,
-        'main': 'Clouds',
-        'description': 'few clouds',
-        'icon': '02d'
+        'id': 800,
+        'main': 'Clear',
+        'description': 'clear sky',
+        'icon': '01n'
       }
     ],
     'main': {
-      'temp': 29.95,
+      'temp': 24.9,
       'pressure': 1010,
-      'humidity': 35,
-      'temp_min': 29,
-      'temp_max': 31
+      'humidity': 42,
+      'temp_min': 23,
+      'temp_max': 27
     },
     'visibility': 10000,
     'wind': {
-      'speed': 5.7,
-      'deg': 20
+      'speed': 3.1,
+      'deg': 60
     },
     'clouds': {
-      'all': 20
+      'all': 0
     },
-    'dt': 1531660026,
+    'dt': 1531688875,
     'id': 745044,
     'name': 'Istanbul'
   },
@@ -166,35 +178,35 @@ const cities = [
     'sys': {
       'type': 1,
       'id': 7100,
-      'message': 0.0065,
+      'message': 0.006,
       'country': 'AE',
-      'sunrise': 1531618680,
-      'sunset': 1531667486
+      'sunrise': 1531618689,
+      'sunset': 1531667481
     },
     'weather': [
       {
         'id': 800,
         'main': 'Clear',
         'description': 'clear sky',
-        'icon': '01d'
+        'icon': '01n'
       }
     ],
     'main': {
-      'temp': 38,
+      'temp': 34,
       'pressure': 993,
-      'humidity': 47,
-      'temp_min': 38,
-      'temp_max': 38
+      'humidity': 71,
+      'temp_min': 34,
+      'temp_max': 34
     },
     'visibility': 8000,
     'wind': {
-      'speed': 5.7,
-      'deg': 330
+      'speed': 3.1,
+      'deg': 190
     },
     'clouds': {
       'all': 0
     },
-    'dt': 1531660026,
+    'dt': 1531688875,
     'id': 292223,
     'name': 'Dubai'
   },
@@ -206,35 +218,35 @@ const cities = [
     'sys': {
       'type': 1,
       'id': 8195,
-      'message': 0.0075,
+      'message': 0.0063,
       'country': 'AU',
-      'sunrise': 1531604232,
-      'sunset': 1531637785
+      'sunrise': 1531604220,
+      'sunset': 1531637802
     },
     'weather': [
       {
-        'id': 803,
+        'id': 801,
         'main': 'Clouds',
-        'description': 'broken clouds',
-        'icon': '04n'
+        'description': 'few clouds',
+        'icon': '02n'
       }
     ],
     'main': {
-      'temp': 8,
-      'pressure': 1005,
-      'humidity': 81,
-      'temp_min': 8,
-      'temp_max': 8
+      'temp': 6,
+      'pressure': 1003,
+      'humidity': 75,
+      'temp_min': 6,
+      'temp_max': 6
     },
     'visibility': 10000,
     'wind': {
-      'speed': 4.6,
-      'deg': 350
+      'speed': 3.6,
+      'deg': 340
     },
     'clouds': {
-      'all': 75
+      'all': 20
     },
-    'dt': 1531660026,
+    'dt': 1531688875,
     'id': 2163355,
     'name': 'Hobart'
   }

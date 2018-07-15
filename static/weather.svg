@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F2B770;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:#679E4A;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:#69AF7E;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:#FCFBED;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st4{fill:#F27E5F;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st5{stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{fill:#FFFFFF;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+  #Clouds {
+  animation: clouds 5s infinite;
+  }
+  @keyframes clouds {
+    0% {
+      transform: translateX(-20px);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(-20px);
+    }
+  }
+</style>
+<g id="Sky">
+	<circle id="XMLID_2229_" class="st0" cx="500.1" cy="497.7" r="314.3"/>
+</g>
+<g id="Ground">
+	<g id="XMLID_28_">
+		<g id="XMLID_45_">
+			<path id="XMLID_46_" class="st1" d="M500.1,812c152.2,0,279.1-108.4,308.1-251.8H192.1C221.1,703.7,348,812,500.1,812z"/>
+		</g>
+		<g id="XMLID_39_">
+			<path id="XMLID_44_" class="st2" d="M808.2,560.1L266.6,707.8c29.9,33.2,66.7,59.9,108.3,78L808.2,560.1L808.2,560.1z"/>
+			<path id="XMLID_43_" class="st2" d="M209.8,617.9"/>
+			<polygon id="XMLID_42_" class="st2" points="808.2,560.1 808.2,560.1 808.2,560.1"/>
+			<path id="XMLID_41_" class="st2" d="M808.2,560.1L578.8,801.9h0.3C694.6,772,784.4,678.2,808.3,560.4L808.2,560.1L808.2,560.1z"
+				/>
+			<polygon id="XMLID_40_" class="st2" points="808.2,560.1 808.2,560.2 808.2,560.1"/>
+		</g>
+		<g id="XMLID_37_">
+			<path id="XMLID_38_" class="st2" d="M808.2,560.1l-616.1,0.1c3.8,18.9,9.3,37.2,16.4,54.7L808.2,560.1L808.2,560.1z"/>
+		</g>
+		<path id="XMLID_36_" class="st1" d="M807.6,560.1c0.4-2.4,0.6-3.7,0.6-5.4c0-12.1-9.8-22.2-22-22.2c-1.8,0-3.6,0.1-5.3,0.6
+			c-0.6-10.6-9.4-19.1-20.1-19.1c-3.6,0-7,0.9-9.9,2.6c-3.2-9.6-12.6-16.5-23.2-16.5c-13.4,0-24.5,10.8-24.5,24.2v35.7H807.6z"/>
+		<rect id="XMLID_35_" x="589.3" y="495.5" class="st3" width="129.1" height="64.5"/>
+		<polygon id="XMLID_34_" class="st4" points="589.3,495.5 655.4,450.6 718.4,495.5"/>
+		<rect id="XMLID_33_" x="612.3" y="516.5" class="st0" width="14.8" height="14.8"/>
+		<rect id="XMLID_32_" x="639.9" y="516.5" class="st0" width="16" height="14.8"/>
+		<rect id="XMLID_31_" x="681.9" y="529.8" class="st5" width="13.8" height="30.3"/>
+		<path id="XMLID_30_" class="st1" d="M578.7,497.6h-0.5c5.5-3.7,9.1-10.1,8.9-17.3c-0.3-11-9.7-19.7-20.8-19.7h-1.7
+			c1.4-2.7,2.2-5.5,2.3-8.8c0.1-11.1-9.4-20-20.5-20h-9c-11.1,0-20.5,8.9-20.5,20c0,3.3,0.8,6,2.3,8.8h-1.7
+			c-11,0-20.5,8.6-20.8,19.7c-0.2,7.2,3.4,13.6,8.9,17.3h-0.5c-10.3,0-19.5,7.4-20.9,17.6c-1.7,12.4,7.9,23.4,20,23.4h75.3
+			c12.1,0,21.7-11.1,20-23.4C598.1,505,589,497.6,578.7,497.6z"/>
+		<polygon id="XMLID_29_" class="st0" points="564.1,519.5 553,528.6 553,520 547,520 547,533.8 541.5,538.6 540.9,539 536,539
+			536,560 551,560 551,540.2 568.9,525.1"/>
+	</g>
+</g>
+<g id="Sun">
+	<g id="XMLID_9_">
+		<circle id="XMLID_11_" class="st4" cx="507" cy="310.5" r="70.9"/>
+		<circle id="XMLID_10_" class="st0" cx="507" cy="310.5" r="26.9"/>
+	</g>
+</g>
+<g id="Clouds">
+	<g id="XMLID_8_">
+		<path id="XMLID_24_" class="st6" d="M667.5,296.3c3.2-11,12.1-16.7,22.6-16.7c4,0,7.8,0.9,11.1,2.6c3.1,1.6,6.9,0.6,8.8-2.2
+			c6.1-8.8,16.3-14.3,27.8-14.3c17.5,0,31.9,12.3,33.6,30.6H667.5z"/>
+		<g id="XMLID_22_">
+			<path id="XMLID_23_" class="st6" d="M336.5,410.1c-12.8,0-24.3,6-31.7,15.3c-3.8,4.8-10.2,7.1-16.2,5.7c-1.8-0.4-3.8-0.7-5.7-0.7
+				c-7.6,0-14.4,3.4-18.9,8.8c-3.8-3.3-8.7-5.4-14.1-5.4c-10.2,0-18.8,7.2-20.8,16.9h148C377,428.2,358.9,410.1,336.5,410.1z"/>
+		</g>
+		<g id="XMLID_20_">
+			<path id="XMLID_21_" class="st6" d="M345.5,222c-13.7,0-26,7-34.4,17.9c-4,5.3-10.1,8.1-16.2,7c-1.5-0.3-3-0.4-4.6-0.4
+				c-6.8,0-13.1,2.8-17.9,7.4c-3.1,3-7.4,4.2-11.3,3c-1.6-0.5-3.3-0.8-5-0.8c-9.5,0-17.5,7.5-19.3,17.9h154.3
+				C391.2,245.3,370.7,222,345.5,222z"/>
+		</g>
+		<line id="XMLID_19_" class="st7" x1="210" y1="310" x2="303" y2="310"/>
+		<line id="XMLID_17_" class="st7" x1="324" y1="310" x2="351" y2="310"/>
+		<line id="XMLID_16_" class="st7" x1="314" y1="473" x2="443" y2="473"/>
+		<line id="XMLID_14_" class="st7" x1="300" y1="473" x2="283" y2="473"/>
+		<line id="XMLID_13_" class="st7" x1="795" y1="317" x2="682" y2="317"/>
+		<line id="XMLID_12_" class="st7" x1="648" y1="317" x2="661" y2="317"/>
+	</g>
+</g>
+</svg>

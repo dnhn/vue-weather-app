@@ -1,3 +1,5 @@
+@import 'weather-svg.scss';
+
 html, body {
   height: 100%;
 }
@@ -11,4 +13,14 @@ body {
 
 .weather {
   height: 100%;
+}
+
+.button {
+  cursor: pointer;
+  padding: 1em 2em;
+  border: 0;
+  border-radius: 2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 1px 1px black;
 }
