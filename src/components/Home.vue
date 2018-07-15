@@ -33,11 +33,32 @@ export default {
   },
   mounted () {
     let localCities = JSON.parse(localStorage.getItem('cities'))
-    let timeDiff = Date.now() - localCities.when
     let timeRange = 6 * 3600 * 1000
+    let timeDiff = timeRange + 1
 
-    if (!localCities['list'] || timeDiff >= timeRange) {
-      console.log('no local')
+    if (localCities) {
+      if (localCities.when) {
+        timeDiff = Date.now() - localCities.when
+      }
+
+      if (!localCities['list'] || timeDiff >= timeRange) {
+        getApi(`https://api.openweathermap.org/data/2.5/group?id=${CITIES}&units=metric&appid=${API_KEY}`)
+          .then(data => {
+            if (data['list']) {
+              data.when = Date.now()
+              localStorage.setItem('cities', JSON.stringify(data))
+              this.cities = data.list.map(item => {
+                item.opened = false
+                return item
+              })
+            } else {
+              this.cities = citiesData
+            }
+          })
+      } else {
+        this.cities = localCities.list
+      }
+    } else {
       getApi(`https://api.openweathermap.org/data/2.5/group?id=${CITIES}&units=metric&appid=${API_KEY}`)
         .then(data => {
           if (data['list']) {
@@ -51,8 +72,6 @@ export default {
             this.cities = citiesData
           }
         })
-    } else {
-      this.cities = localCities.list
     }
   }
 }
