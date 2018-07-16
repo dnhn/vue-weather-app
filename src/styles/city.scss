@@ -35,6 +35,10 @@ $cityClass: '.city';
   &--night {
     background-image: linear-gradient(180deg, var(--color-222), transparent);
     color: var(--color-white) !important;
+
+    @media screen and (orientation: portrait) {
+      background-image: linear-gradient(90deg,var(--color-222),transparent);
+    }
   }
 
   &-temp {
@@ -95,7 +99,7 @@ $cityClass: '.city';
 
     @media screen and (orientation: portrait) {
       font-size: 4vw;
-      grid-template-rows: 50vh repeat(2, 1fr);
+      grid-template-rows: 50vh 1fr 1.25fr;
     }
 
     &--opened {

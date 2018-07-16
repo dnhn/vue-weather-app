@@ -100,9 +100,9 @@
       <div class="city-details-conditions">
         <div>Weather conditions:
           <span
-          v-for="(condition, index) in city.weather"
-          :key="index">
-            {{condition.description}}
+            v-for="(condition, index) in city.weather"
+            :key="index">
+            {{condition.description}}{{index < city.weather.length - 1 ? ',' : ''}}
           </span>
         </div>
         <div>Humidity: {{city.main.humidity}}%</div>
