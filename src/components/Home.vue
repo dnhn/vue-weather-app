@@ -15,12 +15,11 @@
 
 <script>
 import { getApi } from '../api'
-import citiesData from '../cities'
+import citiesFallback from '../cities'
 
 import City from './City'
 
 const API_KEY = '0aa2021d96650cdfe3518911b15684b6'
-// const API_KEY = ''
 const CITIES = '3413829,2643743,2618425,745044,292223,2163355'
 
 export default {
@@ -32,33 +31,26 @@ export default {
     }
   },
   mounted () {
-    let localCities = JSON.parse(localStorage.getItem('cities'))
-    let timeRange = 6 * 3600 * 1000
+    let citiesLocal = JSON.parse(localStorage.getItem('cities'))
+    let timeRange = 3600 * 1000
     let timeDiff = timeRange + 1
 
-    if (localCities) {
-      if (localCities.when) {
-        timeDiff = Date.now() - localCities.when
+    if (citiesLocal) {
+      if (citiesLocal.when) {
+        timeDiff = Date.now() - citiesLocal.when
       }
 
-      if (!localCities['list'] || timeDiff >= timeRange) {
-        getApi(`https://api.openweathermap.org/data/2.5/group?id=${CITIES}&units=metric&appid=${API_KEY}`)
-          .then(data => {
-            if (data['list']) {
-              data.when = Date.now()
-              localStorage.setItem('cities', JSON.stringify(data))
-              this.cities = data.list.map(item => {
-                item.opened = false
-                return item
-              })
-            } else {
-              this.cities = citiesData
-            }
-          })
+      if (!citiesLocal['list'] || timeDiff >= timeRange) {
+        this.getCities()
       } else {
-        this.cities = localCities.list
+        this.cities = citiesLocal.list
       }
     } else {
+      this.getCities()
+    }
+  },
+  methods: {
+    getCities () {
       getApi(`https://api.openweathermap.org/data/2.5/group?id=${CITIES}&units=metric&appid=${API_KEY}`)
         .then(data => {
           if (data['list']) {
@@ -69,7 +61,7 @@ export default {
               return item
             })
           } else {
-            this.cities = citiesData
+            this.cities = citiesFallback
           }
         })
     }

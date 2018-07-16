@@ -1,7 +1,7 @@
 <template>
-  <div id="weather" class="weather">
+  <main id="weather" class="weather">
     <router-view/>
-  </div>
+  </main>
 </template>
 
 <script>
