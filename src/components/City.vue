@@ -126,6 +126,11 @@ export default {
       dateNow: Date.now()
     }
   },
+  mounted () {
+    setInterval(() => {
+      this.dateNow = Date.now()
+    }, 1000)
+  },
   methods: {
     colourByTemp (temp) {
       // blue: hsl(240, 100%, 50%)
@@ -193,7 +198,7 @@ export default {
       const dt = DateTime.fromMillis(time, {
         zone: zones[id]['timezone']
       })
-      const dtFormat = timeFormat ? 'HH:mm' : 'ccc, L LLL, HH:mm'
+      const dtFormat = timeFormat ? 'HH:mm' : 'ccc, L LLL, HH:mm:ss'
 
       return dt.toFormat(dtFormat)
     }
