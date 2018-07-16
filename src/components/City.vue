@@ -178,7 +178,7 @@ export default {
         }
       }
 
-      return clouds.length
+      return !!clouds.length
     },
     toggleDetails (open) {
       if (open) {
