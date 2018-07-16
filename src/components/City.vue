@@ -87,9 +87,9 @@
         </svg>
       </div>
       <div class="city-details-datetime">
-        <div class="city-details-date">{{dateFormat(dateNow, city.id)}}</div>
-        <div>Sunrise: {{timeFormat(city.sys.sunrise * 1000, city.id)}}</div>
-        <div>Sunset: {{timeFormat(city.sys.sunset * 1000, city.id)}}</div>
+        <div class="city-details-date">{{dateTimeFormat(dateNow, city.id)}}</div>
+        <div>Sunrise: {{dateTimeFormat(city.sys.sunrise * 1000, city.id, true)}}</div>
+        <div>Sunset: {{dateTimeFormat(city.sys.sunset * 1000, city.id, true)}}</div>
       </div>
       <div class="city-details-temps">
         <div class="city-details-temp">{{city.main.temp | tempFormat}}</div>
@@ -98,16 +98,16 @@
       </div>
       <div class="city-details-name">{{city.name}}, {{city.id | countryName}}</div>
       <div class="city-details-conditions">
-        <div>Weather conditions:
+        <div v-if="city.weather.length">Weather conditions:
           <span
             v-for="(condition, index) in city.weather"
             :key="index">
-            {{condition.description}}{{index < city.weather.length - 1 ? ',' : ''}}
+            {{condition.description}}<span v-if="index < city.weather.length - 1">,</span>
           </span>
         </div>
-        <div>Humidity: {{city.main.humidity}}%</div>
-        <div>Visibility: {{Math.round(city.visibility / 1000)}} km</div>
-        <div>Wind speed: {{city.wind.speed}} kph</div>
+        <div v-if="city.main.humidity">Humidity: {{city.main.humidity}}%</div>
+        <div v-if="city.visibility">Visibility: {{Math.round(city.visibility / 1000)}} km</div>
+        <div v-if="city.wind.speed">Wind speed: {{city.wind.speed}} kph</div>
       </div>
     </div>
   </div>
@@ -189,19 +189,13 @@ export default {
         this.$refs.cityDetails.scrollTop = 0
       }
     },
-    timeFormat (time, id) {
-      const timeFormatted = DateTime.fromMillis(time, {
+    dateTimeFormat (time, id, timeFormat = false) {
+      const dt = DateTime.fromMillis(time, {
         zone: zones[id]['timezone']
-      }).toFormat('HH:mm')
+      })
+      const dtFormat = timeFormat ? 'HH:mm' : 'ccc, L LLL, HH:mm'
 
-      return timeFormatted
-    },
-    dateFormat (time, id) {
-      const dateFormatted = DateTime.fromMillis(time, {
-        zone: zones[id]['timezone']
-      }).toFormat('ccc, L LLL, HH:mm')
-
-      return dateFormatted
+      return dt.toFormat(dtFormat)
     }
   },
   filters: {
@@ -210,9 +204,6 @@ export default {
     },
     countryName (id) {
       return zones[id]['country']
-    },
-    timezone (id) {
-      return zones[id]['timezone']
     }
   }
 }
