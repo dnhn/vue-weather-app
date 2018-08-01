@@ -13,7 +13,15 @@
   --color-white: white;
   --color-222: #222;
   --color-333: #333;
-  --color-box-shadow: rgba(0, 0, 0, .5);
+  --color-alpha-1: rgba(0, 0, 0, .5);
+  --color-alpha-2: rgba(255, 255, 255, .5);
+  --color-ddd: #ddd;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html, body {
@@ -29,12 +37,40 @@ body {
   cursor: default;
 }
 
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
 .weather {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-ddd);
+}
+
+.main-section {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+button,
+.button {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
 }
 
 .button {
-  cursor: pointer;
   padding: 1em 2em;
   border: 0;
   border-radius: 2em;

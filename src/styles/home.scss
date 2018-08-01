@@ -1,8 +1,0 @@
-.cities {
-  display: flex;
-  height: 100%;
-
-  @media screen and (orientation: portrait) {
-    flex-direction: column;
-  }
-}

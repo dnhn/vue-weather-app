@@ -7,6 +7,10 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+Vue.filter('tempFormat', temp => {
+  return `${Math.round(temp)} ºC`
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#weather',
