@@ -1,13 +1,19 @@
 <template>
   <main id="weather" class="weather">
-    <router-view/>
+    <section class="main-section">
+      <router-view/>
+    </section>
+    <Navigation />
   </main>
 </template>
 
 <script>
+import Navigation from '@/components/Navigation'
+
 export default {
-  name: 'Weather'
+  name: 'Weather',
+  components: { Navigation }
 }
 </script>
 
-<style src="@/styles/main.scss"></style>
+<style lang="scss" src="@/styles/main.scss"></style>
