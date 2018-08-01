@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import Weather from './Weather'
 import router from './router'
+import store from './store'
 
 Vue.config.productionTip = false
 
@@ -10,6 +11,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#weather',
   router,
+  store,
   components: { Weather },
   template: '<Weather/>'
 })
