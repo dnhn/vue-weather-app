@@ -148,6 +148,7 @@ $cityClass: '.city';
     justify-content: center;
     align-items: center;
     font-size: 2vw;
+    line-height: 1.5;
 
     @media screen and (orientation: portrait) {
       grid-column: 2 / span 4;
